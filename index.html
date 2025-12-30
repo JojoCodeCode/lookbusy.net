@@ -1,10 +1,90 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>LOOK BUSY</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LOOK BUSY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: black;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 1px solid white;
+    }
+
+    marquee {
+      font-size: 14px;
+      letter-spacing: 2px;
+      opacity: 0.8;
+    }
+
+    #content {
+      display: flex;
+      padding: 20px;
+      gap: 40px;
+    }
+
+    #sidebar {
+      width: 220px;
+    }
+
+    .logo-video {
+      width: 100%;
+      max-width: 200px;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    #main {
+      max-width: 600px;
+    }
+
+    h1, h2 {
+      letter-spacing: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
     <h1>LOOK BUSY</h1>
-    <p>this site exists now</p>
-  </body>
+    <marquee>new music soon • shows soon • follow us •</marquee>
+  </header>
+
+  <div id="content">
+
+    <div id="sidebar">
+      <video
+        src="animatedblacklogo.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+        class="logo-video">
+      </video>
+
+      <p><strong>Genre:</strong> you tell me</p>
+      <p><strong>From:</strong> Missoula, MT</p>
+      <p><strong>Mood:</strong> busy</p>
+    </div>
+
+    <div id="main">
+      <h2>About Us</h2>
+      <p>
+        Look Busy is a band. We don't have merch.
+      </p>
+    </div>
+
+  </div>
+
+</body>
 </html>
+
