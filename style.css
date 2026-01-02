@@ -80,5 +80,55 @@ h1, h2 {
   gap: 24px;
   margin-top: 32px;
 }
+.header-logo {
+  width: 200px; /* or whatever fits best */
+  display: block;
+  margin: 0 auto 10px auto; /* centers it and adds spacing below */
+}
+.blink {
+  animation: blink-animation 1s steps(1, start) infinite;
+}
+
+@keyframes blink-animation {
+  50% { opacity: 0; }
+}
+.instagram-wrapper {
+  display: flex;          /* Arrange children in a row */
+  gap: 20px;              /* Space between the posts */
+  justify-content: center; /* Center the row horizontally */
+  flex-wrap: wrap;        /* Wrap to next line on small screens */
+}
+#sidebar {
+  width: 220px;
+  padding: 20px;
+  background: #111;
+  height: 100vh;
+  box-sizing: border-box;
+  position: fixed; /* keeps it visible while scrolling */
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.sidebar-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+.sidebar-nav a:hover {
+  color: #3897f0;
+}
+
+#main {
+  margin-left: 240px; /* leave space for sidebar */
+  padding: 20px;
+}
 
 
