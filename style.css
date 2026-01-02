@@ -27,7 +27,7 @@ marquee {
 
 .blink {
   animation: blink-animation 1s steps(1, start) infinite;
-  color: hotpink;
+  color: white;
 }
 
 @keyframes blink-animation {
@@ -75,7 +75,7 @@ marquee {
 /* ===== Headings ===== */
 h1, h2 {
   letter-spacing: 4px;
-  color: hotpink;
+  color: white;
 }
 
 /* ===== Instagram Posts ===== */
