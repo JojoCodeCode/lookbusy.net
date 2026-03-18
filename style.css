@@ -134,7 +134,7 @@ h1 {
 }
 
 .shows {
-  border: 2px solid hotpink;
+  border: 2px solid silver;
   padding: 15px;
   background: #111;
   border-radius: 8px;
@@ -143,12 +143,12 @@ h1 {
 
 .shows:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 10px hotpink;
+  box-shadow: 0 0 10px silver;
 }
 
 .shows h3 {
   margin: 0 0 5px 0;
-  color: hotpink;
+  color: silver;
 }
 
 .shows p {
