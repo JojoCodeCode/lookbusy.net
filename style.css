@@ -21,10 +21,10 @@ header {
 
 /* ===== Scrolling Marquee ===== */
 .marquee {
-  overflow: hidden;         /* hides the text outside the container */
+  overflow: hidden;         /* hides text outside container */
   white-space: nowrap;      /* prevents wrapping */
   box-sizing: border-box;
-  width: 100%;              /* full width across the page */
+  width: 100%;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   padding: 5px 0;
@@ -32,7 +32,7 @@ header {
 
 .marquee span {
   display: inline-block;
-  padding-left: 100%;      /* start off-screen to the right */
+  padding-left: 100%;      /* start off-screen */
   animation: marquee-scroll 15s linear infinite;
 }
 
@@ -41,7 +41,7 @@ header {
   100% { transform: translateX(-100%); }
 }
 
-/* ===== Blinking stars ===== */
+/* ===== Blinking Stars ===== */
 .blink {
   animation: blink-animation 1s steps(1, start) infinite;
   color: white;
@@ -84,9 +84,38 @@ header {
 
 /* ===== Main Content ===== */
 #main {
-  margin-left: 240px;
+  margin-left: 240px; /* leave space for sidebar */
   padding: 20px;
   max-width: 1200px;
+}
+
+/* ===== Headings ===== */
+h1, h2 {
+  letter-spacing: 4px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+/* ===== Instagram Posts ===== */
+.instagram-wrapper {
+  display: flex;
+  gap: 20px;              /* space between posts */
+  justify-content: center; /* center horizontally */
+  flex-wrap: wrap;         /* wrap if screen is narrow */
+  margin-top: 20px;
+}
+
+/* ===== Calendar Styling ===== */
+.calendar-container {
+  border: 2px solid white;
+  padding: 10px;
+  margin-top: 20px;
+  background: black;
 }
 
 .calendar-container iframe {
@@ -96,45 +125,12 @@ header {
   filter: invert(1) hue-rotate(180deg);
 }
 
-/* ===== Headings ===== */
-h1, h2 {
-  letter-spacing: 4px;
-  color: white;
-}
-
-/* ===== Instagram Posts ===== */
-.instagram-wrapper {
-  display: flex;
-  gap: 20px;            /* space between posts */
-  justify-content: center; /* center horizontally */
-  flex-wrap: wrap;      /* wrap if screen is narrow */
-  margin-top: 20px;
-}
-/* ===== Calendar Styling ===== */
-.calendar-container {
-  border: 2px solid white;
-  padding: 10px;
-  margin-top: 20px;
-  background: black;
-}
-
-/* Make iframe feel embedded, not default */
-.calendar-container iframe {
-  width: 100%;
-  height: 800px; /* increase this */
-  border: none;
-  filter: invert(1) hue-rotate(180deg);
-}
-h1 {
-  text-align: center;
-  letter-spacing: 6px;
-  margin-bottom: 20px;
-}
+/* ===== Shows List ===== */
 .show-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 30px; /* space after the calendar */
+  margin-top: 30px; /* space after calendar */
 }
 
 .show {
@@ -159,6 +155,8 @@ h1 {
   margin: 0;
   color: white;
 }
+
+/* ===== Gallery ===== */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -190,6 +188,5 @@ h1 {
   margin: 10px 0;
   color: hotpink;
 }
-
 
 
