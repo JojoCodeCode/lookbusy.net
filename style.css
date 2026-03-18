@@ -143,6 +143,37 @@ h1 {
   margin: 0;
   color: white;
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  border: 2px solid hotpink;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #111;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px hotpink;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-item p {
+  margin: 10px 0;
+  color: hotpink;
+}
 
 
 
