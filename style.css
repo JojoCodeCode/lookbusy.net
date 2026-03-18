@@ -165,7 +165,7 @@ h1 {
 }
 
 .gallery-item {
-  border: 2px solid hotpink;
+  border: 2px solid orange;
   border-radius: 10px;
   overflow: hidden;
   background: #111;
@@ -175,7 +175,7 @@ h1 {
 
 .gallery-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px hotpink;
+  box-shadow: 0 0 15px blue;
 }
 
 .gallery-item img {
@@ -186,7 +186,7 @@ h1 {
 
 .gallery-item p {
   margin: 10px 0;
-  color: hotpink;
+  color: orange;
 }
 
 
