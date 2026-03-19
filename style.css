@@ -180,16 +180,15 @@ h1 {
 
 .gallery-item img {
   width: 100%;
-  max-width: 400px;   /* 👈 limits how big it can get */
   height: auto;
   display: block;
-  margin: 0 auto;     /* centers the image */
 }
 
 .gallery-item p {
   margin: 10px 0;
   color: orange;
 }
-
-
-
+.gallery-item img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
