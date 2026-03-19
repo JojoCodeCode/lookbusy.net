@@ -192,3 +192,18 @@ h1 {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
+.gallery-item {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.gallery-item img {
+  width: 100% !important;
+  height: auto !important;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
